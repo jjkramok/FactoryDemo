@@ -1,6 +1,6 @@
 ﻿namespace FactoryDemo
 {
-    public class SciFiCat : ICat
+    public class SciFiCat : Cat
     {
         public void Cry()
         {

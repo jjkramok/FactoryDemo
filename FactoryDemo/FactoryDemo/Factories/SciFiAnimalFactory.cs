@@ -2,17 +2,17 @@
 {
     public class SciFiAnimalFactory : IAnimalFactory
     {
-        public IDog CreateDog()
+        public Dog CreateDog()
         {
             throw new System.NotImplementedException();
         }
 
-        public ICat CreateCat()
+        public Cat CreateCat()
         {
             throw new System.NotImplementedException();
         }
 
-        public ISeaUrchin CreateSeaUrchin()
+        public SeaUrchin CreateSeaUrchin()
         {
             throw new System.NotImplementedException();
         }

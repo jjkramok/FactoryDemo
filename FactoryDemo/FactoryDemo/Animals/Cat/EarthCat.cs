@@ -1,6 +1,6 @@
 ﻿namespace FactoryDemo
 {
-    public class EarthCat : ICat
+    public class EarthCat : Cat
     {
         public void Cry()
         {

@@ -2,8 +2,8 @@
 {
     public interface IAnimalFactory
     {
-        IDog CreateDog();
-        ICat CreateCat();
-        ISeaUrchin CreateSeaUrchin();
+        Dog CreateDog();
+        Cat CreateCat();
+        SeaUrchin CreateSeaUrchin();
     }
 }

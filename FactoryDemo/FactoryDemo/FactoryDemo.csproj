@@ -42,13 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animals\Cat\EarthCat.cs" />
-    <Compile Include="Animals\Cat\ICat.cs" />
+    <Compile Include="Animals\Cat\Cat.cs" />
     <Compile Include="Animals\Cat\SciFiCat.cs" />
     <Compile Include="Animals\Dog\EarthDog.cs" />
-    <Compile Include="Animals\Dog\IDog.cs" />
+    <Compile Include="Animals\Dog\Dog.cs" />
     <Compile Include="Animals\Dog\SciFiDog.cs" />
     <Compile Include="Animals\SeaUrchin\EarthSeaUrchin.cs" />
-    <Compile Include="Animals\SeaUrchin\ISeaUrchin.cs" />
+    <Compile Include="Animals\SeaUrchin\SeaUrchin.cs" />
     <Compile Include="Animals\SeaUrchin\SciFiSeaUrchin.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Factories\EarthAnimalFactory.cs" />

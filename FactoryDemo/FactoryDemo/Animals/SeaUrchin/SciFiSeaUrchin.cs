@@ -1,6 +1,6 @@
 ﻿namespace FactoryDemo
 {
-    public class SciFiSeaUrchin : ISeaUrchin
+    public class SciFiSeaUrchin : SeaUrchin
     {
         public void Cry()
         {

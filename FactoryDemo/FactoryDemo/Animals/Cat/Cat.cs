@@ -10,7 +10,7 @@
 
         public override string ToString()
         {
-            return Name + " is a " + Kind + " and has " + " fur";
+            return Name + " is a " + Kind + " and has " + Appearal + " fur";
         }
     }
 }

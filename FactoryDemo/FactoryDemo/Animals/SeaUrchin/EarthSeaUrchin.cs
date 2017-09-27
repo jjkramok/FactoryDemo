@@ -1,6 +1,6 @@
 ﻿namespace FactoryDemo
 {
-    public class EarthSeaUrchin : ISeaUrchin
+    public class EarthSeaUrchin : SeaUrchin
     {
         public void Cry()
         {

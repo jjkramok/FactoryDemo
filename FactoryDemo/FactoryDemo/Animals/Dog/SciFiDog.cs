@@ -1,6 +1,6 @@
 ﻿namespace FactoryDemo
 {
-    public class SciFiDog : IDog
+    public class SciFiDog : Dog
     {
         public void Cry()
         {
