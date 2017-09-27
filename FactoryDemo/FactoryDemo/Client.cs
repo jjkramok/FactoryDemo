@@ -1,7 +1,16 @@
-﻿namespace FactoryDemo
+﻿using System.Collections.Generic;
+using FactoryDemo.Animals;
+
+namespace FactoryDemo
 {
     public class Client
     {
-        //TODO
+        private List<Animal> _animals;
+
+        public Client()
+        {
+            _animals = new List<Animal>();
+            // Randomly generate some animals for the shop
+        }
     }
 }
