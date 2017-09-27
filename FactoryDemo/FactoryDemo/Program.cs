@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using FactoryDemo.Gui;
 
 namespace FactoryDemo
 {
 	internal class Program
 	{
+
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			new StylePicker();
 		}
 	}
 }
