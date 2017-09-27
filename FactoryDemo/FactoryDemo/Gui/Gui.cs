@@ -3,9 +3,9 @@ using System.Drawing;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 using FactoryDemo.Gui.Components.Buttons;
-using FactoryDemo.Gui.Components.Factories;
 using FactoryDemo.Gui.Components.ListBoxes;
 using FactoryDemo.Gui.Components.TextBoxes;
+using FactoryDemo.Gui.Factories;
 
 namespace FactoryDemo.Gui
 {

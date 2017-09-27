@@ -4,7 +4,7 @@ using FactoryDemo.Gui.Components.Buttons;
 using FactoryDemo.Gui.Components.ListBoxes;
 using FactoryDemo.Gui.Components.TextBoxes;
 
-namespace FactoryDemo.Gui.Components.Factories
+namespace FactoryDemo.Gui.Factories
 {
 	public class DarkGuiFactory : IGuiFactory
 	{

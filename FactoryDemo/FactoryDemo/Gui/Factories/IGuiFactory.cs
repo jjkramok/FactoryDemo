@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace FactoryDemo.Gui.Components.Factories
+namespace FactoryDemo.Gui.Factories
 {
 	public interface IGuiFactory
 	{
