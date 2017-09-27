@@ -41,20 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animals\Cat\EarthCat.cs" />
+    <Compile Include="Animals\Cat\ICat.cs" />
+    <Compile Include="Animals\Cat\SciFiCat.cs" />
+    <Compile Include="Animals\Dog\EarthDog.cs" />
+    <Compile Include="Animals\Dog\IDog.cs" />
+    <Compile Include="Animals\Dog\SciFiDog.cs" />
+    <Compile Include="Animals\SeaUrchin\EarthSeaUrchin.cs" />
+    <Compile Include="Animals\SeaUrchin\ISeaUrchin.cs" />
+    <Compile Include="Animals\SeaUrchin\SciFiSeaUrchin.cs" />
     <Compile Include="Client.cs" />
-    <Compile Include="EarthAnimalFactory.cs" />
-    <Compile Include="EarthCat.cs" />
-    <Compile Include="EarthDog.cs" />
-    <Compile Include="EarthSeaUrchin.cs" />
-    <Compile Include="IAnimalFactory.cs" />
-    <Compile Include="ICat.cs" />
-    <Compile Include="IDog.cs" />
-    <Compile Include="ISeaUrchin.cs" />
+    <Compile Include="Factories\EarthAnimalFactory.cs" />
+    <Compile Include="Factories\IAnimalFactory.cs" />
+    <Compile Include="Factories\SciFiAnimalFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SciFiAnimalFactory.cs" />
-    <Compile Include="SciFiCat.cs" />
-    <Compile Include="SciFiDog.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
