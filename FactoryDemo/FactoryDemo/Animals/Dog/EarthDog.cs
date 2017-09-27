@@ -1,6 +1,6 @@
 ﻿namespace FactoryDemo
 {
-    public class EarthDog : IDog
+    public class EarthDog : Dog
     {
         public string Name { get; set; }
         
