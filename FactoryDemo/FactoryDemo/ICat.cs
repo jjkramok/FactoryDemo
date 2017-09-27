@@ -2,6 +2,7 @@
 {
     public interface ICat
     {
-        
+        void Cry();
+        string ToString();
     }
 }

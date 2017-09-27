@@ -4,17 +4,17 @@
     {
         public IDog CreateDog()
         {
-            return null;
+            throw new System.NotImplementedException();
         }
 
         public ICat CreateCat()
         {
-            return null;
+            throw new System.NotImplementedException();
         }
 
         public ISeaUrchin CreateSeaUrchin()
         {
-            return null;
+            throw new System.NotImplementedException();
         }
     }
 }

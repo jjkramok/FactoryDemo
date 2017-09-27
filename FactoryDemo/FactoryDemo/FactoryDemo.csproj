@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client.cs" />
     <Compile Include="EarthAnimalFactory.cs" />
+    <Compile Include="EarthCat.cs" />
     <Compile Include="EarthDog.cs" />
+    <Compile Include="EarthSeaUrchin.cs" />
     <Compile Include="IAnimalFactory.cs" />
     <Compile Include="ICat.cs" />
     <Compile Include="IDog.cs" />
@@ -50,6 +53,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SciFiAnimalFactory.cs" />
+    <Compile Include="SciFiCat.cs" />
+    <Compile Include="SciFiDog.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

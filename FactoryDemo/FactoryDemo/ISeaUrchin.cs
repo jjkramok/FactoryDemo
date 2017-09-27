@@ -2,6 +2,7 @@
 {
     public interface ISeaUrchin
     {
-        
+        void Cry();
+        string ToString();
     }
 }
