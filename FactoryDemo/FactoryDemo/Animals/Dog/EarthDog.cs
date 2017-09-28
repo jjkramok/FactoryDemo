@@ -7,5 +7,10 @@
             _cry = "*woof*";
             Kind = "earth dog";
         }
+        
+        public override string ToString()
+        {
+            return Name + " is a " + Kind + " and has " + Appearal + " fur";
+        }
     }
 }

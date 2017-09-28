@@ -5,7 +5,12 @@
         public new string Name = "Unnamed Sea Urchin";
         public new string Kind = "sea urchin";
 
-        protected SeaUrchin(string name, double weight, string appearal) : base(name, weight, appearal) {}
+        protected SeaUrchin(string name, double weight, string appearal) : base(name, weight, appearal)
+        {
+            Name = name;
+            Weight = weight;
+            Appearal = appearal;
+        }
         
         public override string ToString()
         {

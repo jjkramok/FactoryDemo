@@ -7,5 +7,10 @@
             _cry = "*beep* *boop*";
             Kind = "sci-fi sea urchin";
         }
+        
+        public override string ToString()
+        {
+            return Name + " is a " + Kind + " and has " + Appearal + " plated spines";
+        }
     }
 }
