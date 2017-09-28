@@ -1,10 +1,11 @@
-﻿namespace FactoryDemo
+﻿namespace FactoryDemo.Animals.SeaUrchin
 {
     public class SciFiSeaUrchin : SeaUrchin
     {
-        public void Cry()
+        public SciFiSeaUrchin(string name, double weight, string appearal) : base(name, weight, appearal)
         {
-            throw new System.NotImplementedException();
+            _cry = "*beep* *boop*";
+            Kind = "sci-fi sea urchin";
         }
     }
 }

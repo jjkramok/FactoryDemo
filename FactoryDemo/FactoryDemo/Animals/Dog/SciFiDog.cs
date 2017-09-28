@@ -1,10 +1,11 @@
-﻿namespace FactoryDemo
+﻿namespace FactoryDemo.Animals.Dog
 {
     public class SciFiDog : Dog
     {
-        public void Cry()
+        public SciFiDog(string name, double weight, string appearal) : base(name, weight, appearal)
         {
-            throw new System.NotImplementedException();
+            _cry = "*beep* *boop*";
+            Kind = "sci-fi dog";
         }
     }
 }

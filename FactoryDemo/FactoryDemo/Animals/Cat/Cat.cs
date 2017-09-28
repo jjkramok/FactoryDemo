@@ -1,16 +1,10 @@
-﻿namespace FactoryDemo
+﻿namespace FactoryDemo.Animals.Cat
 {
-    public abstract class Cat
+    public abstract class Cat : Animal
     {
-        public string Name = "Unnamed Cat";
-        public double Weight;
-        public string Appearal;
-        public string Cry;
-        public string Kind = "cat";
+        public new string Name = "Unnamed Cat";
+        public new string Kind = "cat";
 
-        public override string ToString()
-        {
-            return Name + " is a " + Kind + " and has " + Appearal + " fur";
-        }
+        protected Cat(string name, double weight, string appearal) : base(name, weight, appearal) {}
     }
 }

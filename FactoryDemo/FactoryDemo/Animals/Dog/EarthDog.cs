@@ -1,17 +1,11 @@
-﻿namespace FactoryDemo
+﻿namespace FactoryDemo.Animals.Dog
 {
     public class EarthDog : Dog
     {
-        public string Name { get; set; }
-        
-        public void Cry()
+        public EarthDog(string name, double weight, string appearal) : base(name, weight, appearal)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public override string ToString()
-        {
-            throw new System.NotImplementedException();
+            _cry = "*woof*"; // TODO set Cry;
+            Kind = "earth dog";
         }
     }
 }

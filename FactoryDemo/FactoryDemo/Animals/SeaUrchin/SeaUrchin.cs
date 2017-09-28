@@ -1,13 +1,12 @@
 ﻿namespace FactoryDemo.Animals.SeaUrchin
 {
-    public abstract class SeaUrchin
+    public abstract class SeaUrchin : Animal
     {
-        public string Name = "Unnamed Sea Urchin";
-        public double Weight;
-        public string Appearal;
-        public string Cry;
-        public string Kind = "sea urchin";
+        public new string Name = "Unnamed Sea Urchin";
+        public new string Kind = "sea urchin";
 
+        protected SeaUrchin(string name, double weight, string appearal) : base(name, weight, appearal) {}
+        
         public override string ToString()
         {
             return Name + " is a " + Kind + " and has " + Appearal + " spines";

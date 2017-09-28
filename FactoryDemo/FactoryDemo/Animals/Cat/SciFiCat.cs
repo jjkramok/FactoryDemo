@@ -1,10 +1,11 @@
-﻿namespace FactoryDemo
+﻿namespace FactoryDemo.Animals.Cat
 {
     public class SciFiCat : Cat
     {
-        public void Cry()
+        public SciFiCat(string name, double weight, string appearal) : base(name, weight, appearal)
         {
-            throw new System.NotImplementedException();
+            _cry = "*beep* *boop*";
+            Kind = "sci-fi cat";
         }
     }
 }
