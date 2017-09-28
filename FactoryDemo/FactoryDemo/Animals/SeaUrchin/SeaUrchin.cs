@@ -1,4 +1,4 @@
-﻿namespace FactoryDemo
+﻿namespace FactoryDemo.Animals.SeaUrchin
 {
     public abstract class SeaUrchin
     {

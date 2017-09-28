@@ -10,7 +10,6 @@ namespace FactoryDemo
         public Client()
         {
             _animals = new List<Animal>();
-            // Randomly generate some animals for the shop
         }
     }
 }
