@@ -1,4 +1,4 @@
-﻿using FactoryDemo.Gui;
+using FactoryDemo.Gui;
 
 namespace FactoryDemo
 {
