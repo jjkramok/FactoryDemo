@@ -1,20 +1,24 @@
-﻿namespace FactoryDemo
+﻿using FactoryDemo.Animals.Cat;
+using FactoryDemo.Animals.Dog;
+using FactoryDemo.Animals.SeaUrchin;
+
+namespace FactoryDemo.Factories
 {
     public class EarthAnimalFactory : IAnimalFactory
     {
-        public Dog CreateDog()
+        public Dog CreateDog(string name, double weight, string appearal)
         {
-            throw new System.NotImplementedException();
+            return new EarthDog(name, weight, appearal);
         }
 
-        public Cat CreateCat()
+        public Cat CreateCat(string name, double weight, string appearal)
         {
-            throw new System.NotImplementedException();
+            return new EarthCat(name, weight, appearal);
         }
 
-        public SeaUrchin CreateSeaUrchin()
+        public SeaUrchin CreateSeaUrchin(string name, double weight, string appearal)
         {
-            throw new System.NotImplementedException();
+            return new EarthSeaUrchin(name, weight, appearal);
         }
     }
 }
