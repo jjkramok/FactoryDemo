@@ -4,7 +4,7 @@
     {
         public EarthCat(string name, double weight, string appearal) : base(name, weight, appearal)
         {
-            _cry = "*meow*"; // TODO set Cry;
+            _cry = "*meow*";
             Kind = "earth cat";
         }
     }
