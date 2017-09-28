@@ -1,15 +1,19 @@
 ﻿using System.Collections.Generic;
+using System.Windows.Forms;
 using FactoryDemo.Animals;
+using FactoryDemo.Gui;
 
 namespace FactoryDemo
 {
     public class Client
     {
-        private List<Animal> _animals;
-
+        private StylePicker _stylePicker;
+        
         public Client()
-        {
-            _animals = new List<Animal>();
+        {   
+            _stylePicker = new StylePicker();
+            
+            Application.Run(_stylePicker);
         }
     }
 }

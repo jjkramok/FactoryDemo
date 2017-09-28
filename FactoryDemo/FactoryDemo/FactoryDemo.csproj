@@ -49,10 +49,14 @@
     <Compile Include="Gui\Components\ListBoxes\DarkGuiListBox.cs" />
     <Compile Include="Gui\Components\ListBoxes\GuiListBox.cs" />
     <Compile Include="Gui\Components\ListBoxes\SimpleGuiListBox.cs" />
+    <Compile Include="Gui\Components\RadioButtons\DarkGuiRadioButton.cs" />
+    <Compile Include="Gui\Components\RadioButtons\GuiRadioButton.cs" />
+    <Compile Include="Gui\Components\RadioButtons\SimpleGuiRadioButton.cs" />
     <Compile Include="Gui\Components\TextBoxes\DarkGuiTextBox.cs" />
     <Compile Include="Gui\Components\TextBoxes\GuiTextBox.cs" />
     <Compile Include="Gui\Components\TextBoxes\SimpleGuiTextBox.cs" />
     <Compile Include="Gui\Factories\DarkGuiFactory.cs" />
+    <Compile Include="Gui\Factories\GuiFactoryFactory.cs" />
     <Compile Include="Gui\Factories\IGuiFactory.cs" />
     <Compile Include="Gui\Factories\SimpleGuiFactory.cs" />
     <Compile Include="Gui\Gui.cs" />

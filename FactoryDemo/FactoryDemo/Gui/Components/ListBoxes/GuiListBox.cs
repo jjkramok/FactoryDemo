@@ -1,29 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
+using FactoryDemo.Animals;
 
 namespace FactoryDemo.Gui.Components.ListBoxes
 {
 	public abstract class GuiListBox : ListBox
 	{
-		private List<string> _listItems;
-
-		protected GuiListBox()
+		public void UpdateList(List<Animal> list)
 		{
-			_listItems = new List<string>();
-			DataSource = _listItems;
-		}
-
-		public void AddToList(string value)
-		{
-			_listItems.Add(value);
-
 			DataSource = null;
-			DataSource = _listItems;
-		}
-
-		public void RemoveSelectedFromList()
-		{
-			_listItems.RemoveAt(SelectedIndex);
+			DataSource = list;
 		}
 	}
 }

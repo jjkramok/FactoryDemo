@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using FactoryDemo.Gui.Components.Buttons;
 using FactoryDemo.Gui.Components.ListBoxes;
+using FactoryDemo.Gui.Components.RadioButtons;
 using FactoryDemo.Gui.Components.TextBoxes;
 
 namespace FactoryDemo.Gui.Factories
@@ -15,6 +16,7 @@ namespace FactoryDemo.Gui.Factories
 				case "BUTTON": return new DarkGuiButton();
 				case "TEXTBOX": return new DarkGuiTextBox();
 				case "LISTBOX": return new DarkGuiListBox();
+				case "RADIOBUTTON": return new DarkGuiRadioButton();
 				default: return null;
 			}
 		}

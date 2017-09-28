@@ -1,4 +1,4 @@
-using FactoryDemo.Gui;
+﻿using FactoryDemo.Gui;
 
 namespace FactoryDemo
 {
@@ -7,7 +7,7 @@ namespace FactoryDemo
 
 		public static void Main(string[] args)
 		{
-			new StylePicker();
+			new Client();
 		}
 	}
 }
