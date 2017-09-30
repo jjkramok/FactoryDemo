@@ -46,6 +46,7 @@
     <Compile Include="Gui\Components\Buttons\DarkGuiButton.cs" />
     <Compile Include="Gui\Components\Buttons\GuiButton.cs" />
     <Compile Include="Gui\Components\Buttons\SimpleGuiButton.cs" />
+    <Compile Include="Gui\Components\ComponentNames.cs" />
     <Compile Include="Gui\Components\ListBoxes\DarkGuiListBox.cs" />
     <Compile Include="Gui\Components\ListBoxes\GuiListBox.cs" />
     <Compile Include="Gui\Components\ListBoxes\SimpleGuiListBox.cs" />

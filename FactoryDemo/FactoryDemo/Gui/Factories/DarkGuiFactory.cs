@@ -4,6 +4,7 @@ using FactoryDemo.Gui.Components.Buttons;
 using FactoryDemo.Gui.Components.ListBoxes;
 using FactoryDemo.Gui.Components.RadioButtons;
 using FactoryDemo.Gui.Components.TextBoxes;
+using FactoryDemo.Gui.Components;
 
 namespace FactoryDemo.Gui.Factories
 {
@@ -13,10 +14,10 @@ namespace FactoryDemo.Gui.Factories
 		{
 			switch (name)
 			{
-				case "BUTTON": return new DarkGuiButton();
-				case "TEXTBOX": return new DarkGuiTextBox();
-				case "LISTBOX": return new DarkGuiListBox();
-				case "RADIOBUTTON": return new DarkGuiRadioButton();
+				case ComponentNames.Button: return new DarkGuiButton();
+				case ComponentNames.TextBox: return new DarkGuiTextBox();
+				case ComponentNames.ListBox: return new DarkGuiListBox();
+				case ComponentNames.RadioButton: return new DarkGuiRadioButton();
 				default: return null;
 			}
 		}

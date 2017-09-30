@@ -1,8 +1,10 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 using FactoryDemo.Gui.Components.Buttons;
 using FactoryDemo.Gui.Components.ListBoxes;
 using FactoryDemo.Gui.Components.RadioButtons;
 using FactoryDemo.Gui.Components.TextBoxes;
+using FactoryDemo.Gui.Components;
 
 namespace FactoryDemo.Gui.Factories
 {
@@ -12,10 +14,10 @@ namespace FactoryDemo.Gui.Factories
 		{
 			switch (name)
 			{
-				case "BUTTON": return new SimpleGuiButton();
-				case "TEXTBOX": return new SimpleGuiTextBox();
-				case "LISTBOX": return new SimpleGuiListBox();
-				case "RADIOBUTTON": return new SimpleGuiRadioButton();
+				case ComponentNames.Button: return new SimpleGuiButton();
+				case ComponentNames.TextBox: return new SimpleGuiTextBox();
+				case ComponentNames.ListBox: return new SimpleGuiListBox();
+				case ComponentNames.RadioButton: return new SimpleGuiRadioButton();
 				default: return null;
 			}
 		}

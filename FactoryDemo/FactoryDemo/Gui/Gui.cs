@@ -15,10 +15,9 @@ namespace FactoryDemo.Gui
 {
 	public class Gui
 	{
-		private IGuiFactory _guiFactory;
-
 		public Form Window;
 		public GuiButton ButtonAddAnimal;
+		public GuiButton ButtonRemoveAnimal;
 		public GuiTextBox TextBoxName;
 		public GroupBox GroupBoxSpecies;
 		public GroupBox GroupBoxType;
@@ -29,16 +28,49 @@ namespace FactoryDemo.Gui
 		public GuiRadioButton RadioButtonSpeciesSeaUrchin;
 		public GuiListBox ListBoxAnimals;
 
-		private List<Animal> _animals;
+		private readonly IGuiFactory _guiFactory;
+		private readonly List<Animal> _animals;
 
 		public Gui(string style)
 		{
 			_animals = new List<Animal>();
-
 			_guiFactory = GuiFactoryFactory.CreateGuiFactory(style);
+
+			InitializeTypeGroup();
+			InitializeSpeciesGroup();
+
 			Window = _guiFactory.CreateForm();
 			Window.Size = new Size(500, Window.Size.Height);
 
+			TextBoxName = (GuiTextBox) _guiFactory.CreateComponent("TEXTBOX");
+			TextBoxName.Location = new Point(10, 170);
+
+			ButtonAddAnimal = (GuiButton) _guiFactory.CreateComponent("BUTTON");
+			ButtonAddAnimal.Location = new Point(10, 200);
+			ButtonAddAnimal.Text = "Add animal";
+			ButtonAddAnimal.Click += HandleAddAnimal;
+
+			ButtonRemoveAnimal = (GuiButton) _guiFactory.CreateComponent("BUTTON");
+			ButtonRemoveAnimal.Location = new Point(85, 200);
+			ButtonRemoveAnimal.Text = "Remove animal";
+			ButtonRemoveAnimal.Click += HandleRemoveAnimal;
+
+			ListBoxAnimals = (GuiListBox) _guiFactory.CreateComponent("LISTBOX");
+			ListBoxAnimals.Location = new Point(120, 10);
+			ListBoxAnimals.Size = new Size(350, 190);
+
+			Window.Controls.Add(GroupBoxType);
+			Window.Controls.Add(GroupBoxSpecies);
+			Window.Controls.Add(TextBoxName);
+			Window.Controls.Add(ButtonAddAnimal);
+			Window.Controls.Add(ButtonRemoveAnimal);
+			Window.Controls.Add(ListBoxAnimals);
+
+			Window.Show();
+		}
+
+		private void InitializeTypeGroup()
+		{
 			RadioButtonTypeSciFi = (GuiRadioButton) _guiFactory.CreateComponent("RADIOBUTTON");
 			RadioButtonTypeSciFi.Text = "Sci-fi";
 			RadioButtonTypeSciFi.Location = new Point(10, 10);
@@ -55,7 +87,10 @@ namespace FactoryDemo.Gui
 			GroupBoxType.Location = new Point(10, 10);
 			GroupBoxType.Controls.Add(RadioButtonTypeSciFi);
 			GroupBoxType.Controls.Add(RadioButtonTypeEarth);
+		}
 
+		private void InitializeSpeciesGroup()
+		{
 			RadioButtonSpeciesCat = (GuiRadioButton) _guiFactory.CreateComponent("RADIOBUTTON");
 			RadioButtonSpeciesCat.Text = "Cat";
 			RadioButtonSpeciesCat.Location = new Point(10, 10);
@@ -78,26 +113,6 @@ namespace FactoryDemo.Gui
 			GroupBoxSpecies.Controls.Add(RadioButtonSpeciesCat);
 			GroupBoxSpecies.Controls.Add(RadioButtonSpeciesDog);
 			GroupBoxSpecies.Controls.Add(RadioButtonSpeciesSeaUrchin);
-
-			TextBoxName = (GuiTextBox) _guiFactory.CreateComponent("TEXTBOX");
-			TextBoxName.Location = new Point(10, 170);
-
-			ButtonAddAnimal = (GuiButton) _guiFactory.CreateComponent("BUTTON");
-			ButtonAddAnimal.Location = new Point(10, 200);
-			ButtonAddAnimal.Text = "Add animal";
-			ButtonAddAnimal.Click += HandleAddAnimal;
-
-			ListBoxAnimals = (GuiListBox) _guiFactory.CreateComponent("LISTBOX");
-			ListBoxAnimals.Location = new Point(120, 10);
-			ListBoxAnimals.Size = new Size(350, 200);
-
-			Window.Controls.Add(GroupBoxType);
-			Window.Controls.Add(GroupBoxSpecies);
-			Window.Controls.Add(TextBoxName);
-			Window.Controls.Add(ButtonAddAnimal);
-			Window.Controls.Add(ListBoxAnimals);
-
-			Window.Show();
 		}
 
 		private void HandleAddAnimal(object s, EventArgs e)
@@ -116,6 +131,12 @@ namespace FactoryDemo.Gui
 			else return;
 
 			_animals.Add(animal);
+			ListBoxAnimals.UpdateList(_animals);
+		}
+
+		private void HandleRemoveAnimal(object s, EventArgs e)
+		{
+			_animals.Remove((Animal) ListBoxAnimals.SelectedItem);
 			ListBoxAnimals.UpdateList(_animals);
 		}
 	}
