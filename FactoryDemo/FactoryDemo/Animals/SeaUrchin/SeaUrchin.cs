@@ -14,7 +14,7 @@
         
         public override string ToString()
         {
-            return Name + " is a " + Kind + " and has " + Appearal + " spines";
+            return Name + " is " + GrammarFix(Kind) + Kind + " and has " + Appearal + " spines";
         }
     }
 }

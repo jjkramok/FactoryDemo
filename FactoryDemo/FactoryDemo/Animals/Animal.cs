@@ -19,10 +19,16 @@
         {
             return _cry;
         }
+
+        // Returns correct article based on the first letter of given string
+        public static string GrammarFix(string kind)
+        {
+            return "aeiouAEIOU".IndexOf(kind[0]) >= 0 ? "an " : "a ";
+        }
         
         public override string ToString()
         {
-            return Name + " is a " + Kind + " and has " + Appearal + " fur";
+            return Name + " is " + GrammarFix(Kind) + Kind + " and has " + Appearal + " fur";
         }
     }
 }

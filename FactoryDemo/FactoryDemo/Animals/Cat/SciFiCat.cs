@@ -10,7 +10,7 @@
         
         public override string ToString()
         {
-            return Name + " is a " + Kind + " and has " + Appearal + " plating";
+            return Name + " is " + GrammarFix(Kind) + Kind + " and has " + Appearal + " plating";
         }
     }
 }
