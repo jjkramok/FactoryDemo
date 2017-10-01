@@ -9,7 +9,7 @@
         {
             Name = name;
             Weight = weight;
-            Appearal = appearal;
+            Appearal = appearal.Equals("") ? "nondescript" : appearal;
         }
         
         public override string ToString()
